@@ -16,7 +16,7 @@ jobs:
         toolchain: [ stable ]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Install toolchain
         uses: actions-rs/toolchain@v1
         with:
@@ -36,7 +36,7 @@ jobs:
     name: rustfmt
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
@@ -53,7 +53,7 @@ jobs:
     name: Clippy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
