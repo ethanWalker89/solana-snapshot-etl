@@ -20,7 +20,7 @@ solana-sdk = "1.11.3"
 memmap2 = "0.5.5"
 itertools = "0.10.3"
 tar = "0.4.38"
-zstd = "0.11.2"
+zstd = "0.13.3"
 
 # Binary deps
 borsh = { version = "0.9.3", optional = true }
